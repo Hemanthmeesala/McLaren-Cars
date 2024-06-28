@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Mclaren Sports Car</title>
   </head>
@@ -82,6 +92,34 @@
               loop
               muted
             ></video>
+            <video
+              class="trailer mclaren-2 screen-video"
+              src="./videos/mclaren-2.mp4"
+              autoplay
+              loop
+              muted
+            ></video>
+            <video
+              class="trailer mclaren-3 screen-video"
+              src="./videos/mclaren-3.mp4"
+              autoplay
+              loop
+              muted
+            ></video>
+            <video
+              class="trailer mclaren-4 screen-video"
+              src="./videos/mclaren-4.mp4"
+              autoplay
+              loop
+              muted
+            ></video>
+            <video
+              class="trailer mclaren-5 screen-video"
+              src="./videos/mclaren-5.mp4"
+              autoplay
+              loop
+              muted
+            ></video>
           </span>
           <span style="--i: 1">
             <video
@@ -112,7 +150,49 @@
           </span>
         </div>
       </div>
+      <div class="gallery">
+        <div class="carousel">
+          <a class="carousel-item" href="#" onclick="changeVideo('mclaren-1');">
+            <img src="./cars/mclaren-1.jpg" alt="" />
+            <h4>765LT SPIDER</h4>
+          </a>
+          <a class="carousel-item" href="#" onclick="changeVideo('mclaren-2');">
+            <img src="./cars/mclaren-2.jpg" alt="" />
+            <h4 style="color: #92ff00">ARTURA</h4>
+          </a>
+          <a class="carousel-item" href="#" onclick="changeVideo('mclaren-3');">
+            <img src="./cars/mclaren-3.jpeg" alt="" />
+            <h4 style="color: #ff0015">7505</h4>
+          </a>
+          <a class="carousel-item" href="#" onclick="changeVideo('mclaren-4');">
+            <img src="./cars/mclaren-4.jpeg" alt="" />
+            <h4 style="color: #ff2e00">765LT</h4>
+          </a>
+          <a class="carousel-item" href="#" onclick="changeVideo('mclaren-5');">
+            <img src="./cars/mclaren-5.jpeg" alt="" />
+            <h4 style="color: #bbc0dd">7505 SPIDER</h4>
+          </a>
+        </div>
+      </div>
     </div>
+    <yl class="sci">
+      <li>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+      </li>
+    </yl>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="script.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".carousel").carousel();
+      });
+    </script>
   </body>
 </html>
